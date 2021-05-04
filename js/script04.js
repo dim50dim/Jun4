@@ -53,25 +53,48 @@
 //Также сделайте простую проверку, что пользователь ввел число.
 
 
+ 
+
+
   let input = document.querySelector('.input');
-  document.querySelector('.btn').onclick = clk;        
-  
-  function clk(){
-      let a = input.value;
-       let b = a.toString.length - 1;
-       if(b == [0]){
-        alert('Вам' + ' ' + a + ' лет');
+  let btn = document.querySelector('.btn');
+function f2 () {
+	
+	let a  = +input.value;
+  let d;
+  d = a % 100;
 
-       }else if(b == [5], [6], [7], [8], [9]){
-         alert('Вам' + ' ' + a + ' лет');
-          
-      }else if(b == [2], [3], [4]){
-        alert('Вам' + ' ' + a + ' года');
-
-     
-      }else {
-        alert('Вам' + ' ' + a + ' год');
-      }
+	if( d >= 5 && d <= 20){
+    
+	        	alert('Вам' +' '+ d + ' ' + 'лет'); 
+	
+	 }else {
+       let b;
+       b = d % 10;
+       if(b == 1){
+            alert('Вам'+ ' ' + d + ' ' + 'год');
+       }
+       
+          else if(b>=2 && b <= 4){
+             alert('Вам' +' ' + d + ' ' + 'года');
+         
+   }else
+ 
+    {
+              alert('Вам' +' '+ d + ' ' + 'лет');
+   }
+  }
 }
+	// 	if (input == 1){
+	// 		alert('Вам' + input + ' ' + 'год');
+	// 	}else if ( input >= 2 && input <= 4){
+	// 	 alert('Вам' + input + ' ' + 'года');
+	// 	}else {
+	// 		alert('Вам' + input + ' ' + 'лет');
+	// 	}
+  // }
+
+    document.querySelector('.btn').onclick = f2;
   
-  
+
+
