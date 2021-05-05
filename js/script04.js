@@ -38,8 +38,8 @@
  //2 * ++number;// 12 NUMBER         , ++ has index 17 called Prefix Increment , ++number is 6 ( number = 5) 1 + 5 = 6 
                                       // second action 2 * 6 = 12  (2 * 6)has index 15
 
- //2 * number — -; // 6 NUMBER       first action Postfix Decrement with index 18 , number-- equals 3, then 2 * 3 index 15
-// console.log(number);// 6
+ //2 * number — -; // 10 NUMBER       first action Postfix Decrement with index 18 , number-- equals 5, then 2 * 5 index 15
+// console.log(number);// 10
 
 
 
