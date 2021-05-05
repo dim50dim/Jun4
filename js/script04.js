@@ -61,7 +61,7 @@ function f2 () {
 	
 	let a  = +input.value;
   let b;
-  b = a % 100;
+  b = a % 1000;
 
 	if( b >= 5 && b <= 20){
     
@@ -84,14 +84,6 @@ function f2 () {
    }
   }
 }
-	// 	if (input == 1){
-	// 		alert('Вам' + input + ' ' + 'год');
-	// 	}else if ( input >= 2 && input <= 4){
-	// 	 alert('Вам' + input + ' ' + 'года');
-	// 	}else {
-	// 		alert('Вам' + input + ' ' + 'лет');
-	// 	}
-  // }
 
     document.querySelector('.btn').onclick = f2;
   
